@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	background-color: #111;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-size: 10px;
+    background: #EDEEF0;
+}
+
+.navbar {
+    overflow: hidden;
+    background:cyan;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.logo-text {
+    font-size: 3em;
+    font-weight: 700;
+    color: #F05136;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-emphasis: center;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    font-size: 1.8em;
+}
+
+.nav-link:hover {
+    color: #F05136;
+}
+
+#home {
+    background: black;
+    color: white;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header div p {
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+h1,
+
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+.link-button {
+
+    text-decoration: none;
+    text-emphasis: center;
+    background: #F05136;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    color: white;
+    font-size: 1.8em;
+    padding: 10px;
+    border-radius: 5%;
+    border-color: black;
+
+}
+
+@media only screen and (max-width: 718px) {
+
+    .link-button{font-size: 1.2em;}
+
+}
+
+
+.link-button:hover {
+    color: white;
+}
+
+#bio {
+    display: flex;
+    align-items: center;
+}
+
+#bio article * {
+    margin: 20px;
+}
+
+.break {
+    display: block;
+}
+
+#bio img {
+    width: 280px;
+    height: 280px;
+    margin: 100px;
+}
+
+hr {
+    width: 400px;
+}
+
+p {
+    font-size: 1.7em;
+}
+
+
+#portfolio {
+    /* background: url(./assets/background-portfolio.jpg); */
+    background-color: black;
+    color: white;
+}
+
+#portfolio,
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#portfolio div {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#portfolio h3,
+p,
+hr {
+    margin-bottom: 20px;
+}
+
+#portfolio div article {
+    color: black;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#portfolio div article p {
+    padding: 0 5px;
+}
+
+#skills-container1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#skills-container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#skills-container1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills-container2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills ul li {
+    margin: 10px 0;
+}
+
+
+progress[value] {
+    width: 350px;
+    height: 10px;
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: grey;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+::-webkit-progress-value {
+    background-color: #F05136;
+}
+
+#skills ul {
+    font-size: 1.5em;
+
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+
+}
+
+#contact form input:last-child {
+    margin-top: 30px;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    line-height: 2em;
+    width: 350px;
+    border-radius: 3px;
+    border-color: black;
+    margin: 20px 0;
+}
+
+
+/* flipcard */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+   
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    background-color: darkgreen;
+    color: white;
+    transform: rotateY(180deg);
+    display: grid;
+    flex-direction: column;
+  }
+
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+	text-transform: uppercase;
+	font-size: 80px;
+	line-height: 1;
+	margin: 10px 0;
+}
+
+span {
+    font-size: 15px;
+}
+
+/* social */
+#social{
+    padding-top: 43px;
+}
+.fa {
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 1px solid white;
+    display: unset;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-github {
+    background: #080606;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  
+  .fa-instagram {
+    background: rgb(179, 34, 34);
+    color:white;
+  }
